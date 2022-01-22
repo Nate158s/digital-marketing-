@@ -1,0 +1,119 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+ Patty:
+
+ Pop PHP Framework
+=================
+
+<img src="http://www.popphp.org/assets/img/pop-php-logo.png" width="180" height="180" />
+
+[![เข้าร่วมแชทที่ https://gitter.im/pop-php-framework/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ pop-php-framework/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+ข้อมูลเผยแพร่
+--------------------
+Pop PHP Framework 4.6.0  
+เผยแพร่เมื่อ 12 กุมภาพันธ์ 2021
+
+ภาพรวม
+--------
+ที่เก็บนี้มีไฟล์ composer.json เพื่อติดตั้ง Pop PHP Framework แบบเต็ม
+ส่วนประกอบหลักของ Pop PHP และส่วนประกอบเพิ่มเติมจะถูกติดตั้ง:
+
+| | ส่วนประกอบ | |
+|------------------------------------------------- -----|---------------------------------------------------------- --------------|------------------------------------------------ ---------------------------------- |
+| [pop-acl](https://github.com/popphp/pop-acl) | [pop-dir](https://github.com/popphp/pop-dir) | [pop-mime](https://github.com/popphp/pop-mime) |
+| [pop-audit](https://github.com/popphp/pop-audit) | [pop-dom](https://github.com/popphp/pop-dom) | [pop-nav](https://github.com/popphp/pop-nav) |
+| [pop-auth](https://github.com/popphp/pop-auth) | [pop-filter](https://github.com/popphp/pop-filter) | [pop-paginator](https://github.com/popphp/pop-paginator) |
+| [pop-cache](https://github.com/popphp/pop-cache) | [pop-form](https://github.com/popphp/pop-form) | [pop-pdf](https://github.com/popphp/pop-pdf) |
+| [pop-code](https://github.com/popphp/pop-code) | [pop-ftp](https://github.com/popphp/pop-ftp) | [ข้าวโพดคั่ว](https://github.com/popphp/popcorn) |
+| [pop-config](https://github.com/popphp/pop-config) | [pop-http](https://github.com/popphp/pop-http) | [popphp](https://github.com/popphp/popphp) |
+| [pop-console](https://github.com/popphp/pop-console) | [pop-i18n](https://github.com/popphp/pop-i18n) | [pop-queue](https://github.com/popphp/pop-queue) |
+| [pop-cookie](https://github.com/popphp/pop-cookie) | [pop-image](https://github.com/popphp/pop-image) | [pop-session](https://github.com/popphp/pop-session) |
+| [pop-css](https://github.com/popphp/pop-css) | [pop-kettle](https://github.com/popphp/pop-kettle) | [pop-utils](https://github.com/popphp/pop-utils) |
+| [pop-csv](https://github.com/popphp/pop-csv) | [pop-loader](https://github.com/popphp/pop-loader) | [pop-validator](https://github.com/popphp/pop-validator) |
+| [pop-db](https://github.com/popphp/pop-db) | [pop-log](https://github.com/popphp/pop-log) | [pop-view](https://github.com/popphp/pop-view) |
+| [pop-debug](https://github.com/popphp/pop-debug) | [pop-mail](https://github.com/popphp/pop-mail) | |
+
+คุณสมบัติใหม่
+------------
+* รองรับ PHP 7.3+ เท่านั้น
+* การทดสอบ PHPUnit ได้รับการปรับโครงสร้างใหม่สำหรับ PHPUnit 9.0+
+* อ้างอิง `CHANGELOG.md` สำหรับรายละเอียดเพิ่มเติม
+
+ติดตั้ง
+--------
+มีหลายวิธีที่คุณสามารถใช้ Pop PHP Framework ในโครงการของคุณ
+
+คุณสามารถสร้างโครงการใหม่ซึ่งแนะนำได้ ด้วยวิธีนี้คุณจะได้
+เข้าถึงสคริปต์ CLI-helper `pop-kettle` ในโฟลเดอร์โครงการหลัก:
+
+``` คอนโซล
+$ นักแต่งเพลง create-project popphp/popphp-framework project-folder
+```
+
+หรือคุณสามารถเพิ่มในโครงการที่มีอยู่ด้วยคำสั่งนี้:
+
+``` คอนโซล
+นักแต่งเพลง $ ต้องการ popphp/popphp-framework
+```
+
+หรือคุณสามารถเพิ่มไฟล์ `composer.json` ของโปรเจ็กต์ของคุณ:
+
+    "จำเป็นต้อง": {
+        "popphp/popphp-framework": "^4.6.0"
+    }
+
+นอกจากนี้ คุณสามารถโคลนที่เก็บนี้และติดตั้งโดยตรง:
+
+``` คอนโซล
+$ นักแต่งเพลงติดตั้ง
+```
+
+### กาต้มน้ำ CLI-Helper
+
+หากเลือกติดตั้งเฟรมเวิร์กในลักษณะที่ `pop-kettle` CLI-helper
+สคริปต์ไม่พร้อมใช้งานในโฟลเดอร์โครงการหลัก คุณสามารถวางสำเนาของ
+สคริปต์จากตำแหน่ง `vendor/popphp/pop-kettle/kettle`:
+
+``` ทุบตี
+$ cp vendor/popphp/popphp-framework/kettle .
+```
+เมื่อคุณคัดลอกสคริปต์ไปแล้ว คุณต้องเปลี่ยนการอ้างอิงไปยังสคริปต์ของ
+ไฟล์ config จาก:
+
+```php
+รวม __DIR__ '/config/app.console.php';
+```
+
+ถึง
+
+```php
+รวม __DIR__ '/vendor/popphp/pop-kettle/config/app.console.php';
+```
+
+และตรวจสอบให้แน่ใจว่าสคริปต์ `kettle` ที่คัดลอกใหม่ได้รับการตั้งค่าให้ทำงาน (755)
+
+``` ทุบตี
+$ chmod 755 กาต้มน้ำ
+```
+
+## อภิปรายผล
+
+มีห้องแชท Gitter สำหรับ Pop PHP ได้ที่ https://gitter.im/pop-php-framework/Lobby
