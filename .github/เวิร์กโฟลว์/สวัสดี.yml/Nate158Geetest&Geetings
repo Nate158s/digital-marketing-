@@ -1,0 +1,218 @@
+name: Geetest&Greetings2021-11-22 21:38:21	
+new GT3SensorManager131948635
+2021-11-22 21:38:21	Geetest
+GT3Version-->4.3.0
+2021-11-22 21:38:21	Geetest
+Lang-->th, Default Lang-->th
+2021-11-22 21:38:21	Geetest
+Parsed Lang-->th
+2021-11-22 21:38:38	Geetest
+startCustomFlow
+2021-11-22 21:38:38	Geetest
+custom view is null
+2021-11-22 21:38:38	Geetest
+showLoading-->Success !
+2021-11-22 21:38:39	Geetest
+API1 result-->{"success":1,"gt":"678eaf2bf3a415e56ada7141342cc197","challenge":"bd113e0b38beb361c8b5a0d5df539a2b","new_captcha":1}
+2021-11-22 21:38:39	Geetest
+Gettype REQUEST START
+2021-11-22 21:38:39	Geetest
+Gettype REQUEST URL: https://api.geetest.com/gettype.php?gt=678eaf2bf3a415e56ada7141342cc197&t=1637591919663
+2021-11-22 21:38:39	Geetest
+GetCoder REQUEST START
+2021-11-22 21:38:39	Geetest
+Gettype Header key: Host value: api.geetest.com
+2021-11-22 21:38:39	Geetest
+GetCoder REQUEST URL: https://api.geetest.com/get.php?gt=678eaf2bf3a415e56ada7141342cc197&challenge=bd113e0b38beb361c8b5a0d5df539a2b&client_type=android&lang=th&client_type=android&w=ujtkMYrrFs0ITQTbw62hOg..79459D47D23D4D9F4967B06A96B940C1B69AD9BB16E730612CEACFB8F6124255814C498754C62B3077ABCF3D096D0DAC137A83197CC3B0D7223546D808E9DE60C404FEF31E209EA22939A37B8DEDFEE86923F2A84F8069B0425AACBB47518EFAFB9A63822AE01977D54706747EA198E1750F3FDDB409795CA6E1E4DDF3AA023D
+2021-11-22 21:38:39	Geetest
+Gettype Header key: Content-Length value: 0
+2021-11-22 21:38:39	Geetest
+GetCoder Header key: Host value: api.geetest.com
+2021-11-22 21:38:39	Geetest
+Gettype Header key: Content-Type value: application/x-www-form-urlencoded
+2021-11-22 21:38:39	Geetest
+GetCoder Header key: Content-Length value: 0
+2021-11-22 21:38:39	Geetest
+GetCoder Header key: Content-Type value: application/x-www-form-urlencoded
+2021-11-22 21:38:40	Geetest
+Gettype responseCode:200
+2021-11-22 21:38:40	Geetest
+GetCoder responseCode:200
+2021-11-22 21:38:40	Geetest
+GettypeREQUEST END
+2021-11-22 21:38:40	Geetest
+GetCoderREQUEST END
+2021-11-22 21:38:40	Geetest
+Ajax REQUEST START
+2021-11-22 21:38:40	Geetest
+Ajax REQUEST URL: https://api.geetest.com/ajax.php?gt=678eaf2bf3a415e56ada7141342cc197&challenge=bd113e0b38beb361c8b5a0d5df539a2b&client_type=android&lang=th
+2021-11-22 21:38:40	Geetest
+Ajax Header key: Content-Encoding value: gzip
+2021-11-22 21:38:40	Geetest
+Ajax Header key: Host value: api.geetest.com
+2021-11-22 21:38:40	Geetest
+Ajax Header key: Accept-Encoding value: gzip
+2021-11-22 21:38:40	Geetest
+Ajax Header key: Content-Length value: 1299
+2021-11-22 21:38:40	Geetest
+Ajax Header key: Content-Type value: application/x-www-form-urlencoded
+2021-11-22 21:38:40	Geetest
+Ajax Header key: Cookie value: GeeTestUser=a63f6e3a95cc8fb452c0b46048e14df1
+2021-11-22 21:38:40	Geetest
+Ajax responseCode:200
+2021-11-22 21:38:40	Geetest
+AjaxREQUEST END
+2021-11-22 21:38:42	Geetest
+onLoadResource-->url: https://static.geetest.com/static/appweb/app3-index.html?gt=678eaf2bf3a415e56ada7141342cc197&challenge=bd113e0b38beb361c8b5a0d5df539a2b&lang=th&title=&type=slide&api_server=api.geetest.com&static_servers=static.geetest.com,%20dn-staticdown.qbox.me&width=100%&timeout=10000&debug=false&aspect_radio_voice=128&aspect_radio_slide=103&aspect_radio_beeline=50&aspect_radio_pencil=128&aspect_radio_click=128&voice=/static/js/voice.1.2.0.js&slide=/static/js/slide.7.8.6.js&beeline=/static/js/beeline.1.0.1.js&pencil=/static/js/pencil.1.0.3.js&click=/static/js/click.3.0.2.js
+2021-11-22 21:38:43	Geetest
+Webview-->onPageStarted-->url: https://static.geetest.com/static/appweb/app3-index.html?gt=678eaf2bf3a415e56ada7141342cc197&challenge=bd113e0b38beb361c8b5a0d5df539a2b&lang=th&title=&type=slide&api_server=api.geetest.com&static_servers=static.geetest.com,%20dn-staticdown.qbox.me&width=100%&timeout=10000&debug=false&aspect_radio_voice=128&aspect_radio_slide=103&aspect_radio_beeline=50&aspect_radio_pencil=128&aspect_radio_click=128&voice=/static/js/voice.1.2.0.js&slide=/static/js/slide.7.8.6.js&beeline=/static/js/beeline.1.0.1.js&pencil=/static/js/pencil.1.0.3.js&click=/static/js/click.3.0.2.js
+2021-11-22 21:38:44	Geetest
+onLoadResource-->url: https://static.geetest.com/static/js/slide.7.8.6.js
+2021-11-22 21:38:45	Geetest
+onLoadResource-->url: https://api.geetest.com/get.php?is_next=true&mobile=true&product=embed&width=100%25&https=true&gt=678eaf2bf3a415e56ada7141342cc197&challenge=bd113e0b38beb361c8b5a0d5df539a2b&lang=th&type=slide3&api_server=api.geetest.com&timeout=10000&aspect_radio_voice=128&aspect_radio_slide=103&aspect_radio_beeline=50&aspect_radio_pencil=128&aspect_radio_click=128&voice=%2Fstatic%2Fjs%2Fvoice.1.2.0.js&beeline=%2Fstatic%2Fjs%2Fbeeline.1.0.1.js&pencil=%2Fstatic%2Fjs%2Fpencil.1.0.3.js&click=%2Fstatic%2Fjs%2Fclick.3.0.2.js&callback=geetest_1637591932477
+2021-11-22 21:38:45	Geetest
+onLoadResource-->url: https://static.geetest.com/static/js/gct.b00e0f5577a097f206b88119c116b27a.js
+2021-11-22 21:38:45	Geetest
+onLoadResource-->url: https://static.geetest.com/static/ant/style_https.1.2.6.css
+2021-11-22 21:38:45	Geetest
+JSInterface-->gtReady
+2021-11-22 21:38:46	Geetest
+onLoadResource-->url: https://static.geetest.com/pictures/gt/5b001e49a/5b001e49a.webp
+2021-11-22 21:38:46	Geetest
+onLoadResource-->url: https://static.geetest.com/pictures/gt/5b001e49a/bg/f7e0f91ee.webp
+2021-11-22 21:38:46	Geetest
+onLoadResource-->url: https://static.geetest.com/pictures/gt/5b001e49a/slice/f7e0f91ee.png
+2021-11-22 21:38:46	Geetest
+onLoadResource-->url: https://static.geetest.com/static/ant/sprite2x.1.2.6.png
+2021-11-22 21:38:46	Geetest
+Webview-->onPageFinished-->url: https://static.geetest.com/static/appweb/app3-index.html?gt=678eaf2bf3a415e56ada7141342cc197&challenge=bd113e0b38beb361c8b5a0d5df539a2b&lang=th&title=&type=slide&api_server=api.geetest.com&static_servers=static.geetest.com,%20dn-staticdown.qbox.me&width=100%&timeout=10000&debug=false&aspect_radio_voice=128&aspect_radio_slide=103&aspect_radio_beeline=50&aspect_radio_pencil=128&aspect_radio_click=128&voice=/static/js/voice.1.2.0.js&slide=/static/js/slide.7.8.6.js&beeline=/static/js/beeline.1.0.1.js&pencil=/static/js/pencil.1.0.3.js&click=/static/js/click.3.0.2.js
+2021-11-22 21:38:46	Geetest
+onLoadResource-->url: https://static.geetest.com/favicon.ico
+2021-11-22 21:38:49	Geetest
+onLoadResource-->url: https://api.geetest.com/ajax.php?gt=678eaf2bf3a415e56ada7141342cc197&challenge=bd113e0b38beb361c8b5a0d5df539a2bcm&lang=th&%24_BBF=3&client_type=web_mobile&w=3iM2deS4qyD0Hua(I0Ku)MbFtAJao9R9jH3eU5)wSlv0Y76PQ8)6ytTgZG0UrPvSYAMArhPcOymjRm5HKpP4kb5Gb2cBdFK9ZtnVjtAUoG2nGLHXEy3LWWJElWBHDV7xY1jJQbR79guGeGp2sBF4MvE(R4Pzq7R1zOFGJmblvdnFBrOUKE75hHDmtsA7gXy7uCp5EIwC3AZizne0zc)CbRZACJgn11yZio5TZ7F6JJlQLRuMuQDC32XFh88S2zTRm0twy9OPnuKEbA8yU)mJJQ(GFfEdoYDYaLjA44IKEvh)DnaPiQ2GBPfruNkCBNWRmlDteq1k0gSrVNZnw8MNqKBt3pCfnumWMBqsfXqIqrobVxNNnWJE84eTzTTQfxkm6TnDVYFsWssTdYwvyQEkwDp66M6EyIYp8bveoTBLDFc)4uB)mHl(XwLuNS91tUfTV82T)wOGCBLWseJrBhNUSsZ1VMc)xpW7Ii5jk8Lo4B)d(CsLSvrxL(m0KZpDIhxsXmG5waHs5iI0miPi8KqSG3M69HSsj2X3vXdJfIE3z)JgWUMrJmBHsv0B3DNYTb1jAY2vgFrmrGvdDPdzLBDNbiZalTOLWFE1zeasLH3rjAR4H4BC0EhH9e7Fxqk8GOtuER2KOKHzhrghZK2Oj5ln0rsYJmzEIWcgcgeET4aL4y426uYllA4vgvg8d1)y52cUIhKocdLqzL75LyVKRWKtedslGWEJi5s8Sgg3ajzffyWwBtjhNCfhFI5dgkwoPwOpRvjOx8ve(V3y(8D)W3WuNts0v2n8550GmUovrhHcH06p9B(KvUkEZ8pNr5OjbZUJa8xXHTaccKqT7M7CMKmuXuJXzS0xJQXdwXaAzcOqUvI.1fc2e56fd26ef5f5e54b218b32809b552b11d4bbca432ab7e0fce600b63d03f9a5549b048805218ce0dbfbfd5af534d04c02b1cc6c9db2cd409b2c01811499e14c1cab7090f95eb3276bb323eb1eb42b04f00c8f2bfbce72fd5da8682a83a5cde3e3b843058cf175f8a84028deaf2602fc8dc2972876e9a1a5e7c7f992cd8664&callback=geetest_1637591930715
+2021-11-22 21:38:50	Geetest
+JSInterface-->gtCallBack-->code: 1, message: Success
+2021-11-22 21:40:20	Geetest
+new GT3SensorManager73567452
+2021-11-22 21:40:20	Geetest
+GT3Version-->4.3.0
+2021-11-22 21:40:20	Geetest
+Lang-->th, Default Lang-->th
+2021-11-22 21:40:20	Geetest
+Parsed Lang-->th
+2021-11-22 21:40:25	Geetest
+onActivityPaused-->com.satang.pro.StartActivity@a2eed5
+2021-11-22 21:40:28	Geetest
+new GT3SensorManager20785834
+2021-11-22 21:40:28	Geetest
+GT3Version-->4.3.0
+2021-11-22 21:40:28	Geetest
+Lang-->th, Default Lang-->th
+2021-11-22 21:40:28	Geetest
+Parsed Lang-->th
+2021-11-22 21:40:28	Geetest
+onActivityResumed-->com.satang.pro.StartActivity@fa8edeb
+2021-11-22 21:40:28	Geetest
+onActivityPaused-->com.satang.pro.StartActivity@fa8edeb
+2021-11-22 21:41:02	Geetest
+startCustomFlow
+2021-11-22 21:41:02	Geetest
+custom view is null
+2021-11-22 21:41:02	Geetest
+showLoading-->Success !
+2021-11-22 21:41:03	Geetest
+API1 result-->{"success":1,"gt":"678eaf2bf3a415e56ada7141342cc197","challenge":"0d0d448142ce7786eef5df84487aa125","new_captcha":1}
+2021-11-22 21:41:03	Geetest
+Gettype REQUEST START
+2021-11-22 21:41:03	Geetest
+Gettype REQUEST URL: https://api.geetest.com/gettype.php?gt=678eaf2bf3a415e56ada7141342cc197&t=1637592063042
+2021-11-22 21:41:03	Geetest
+GetCoder REQUEST START
+2021-11-22 21:41:03	Geetest
+GetCoder REQUEST URL: https://api.geetest.com/get.php?gt=678eaf2bf3a415e56ada7141342cc197&challenge=0d0d448142ce7786eef5df84487aa125&client_type=android&lang=th&client_type=android&w=t0eTWXoXiPvEwdxwVrwwnA..388C1D10E0B3CBD3653A7842EE76C74E5F125A8F760C57A059C322D9D4ECF7B8193383F5FDA8C8766E6C36B7F27C509141B82058363C92FDD9FBC1AB4B38CA923B2ED9E50BC7C0AA5AE51C1305FF664F23458AE6F889E86D06E0B8FAF2B8C01DA78E0480B30A0E6076FB428806279F817E6568F0C105A7CA91D7D26EE24DB2C3
+2021-11-22 21:41:03	Geetest
+Gettype Header key: Host value: api.geetest.com
+2021-11-22 21:41:03	Geetest
+Gettype Header key: Content-Length value: 0
+2021-11-22 21:41:03	Geetest
+Gettype Header key: Content-Type value: application/x-www-form-urlencoded
+2021-11-22 21:41:03	Geetest
+GetCoder Header key: Host value: api.geetest.com
+2021-11-22 21:41:03	Geetest
+GetCoder Header key: Content-Length value: 0
+2021-11-22 21:41:03	Geetest
+GetCoder Header key: Content-Type value: application/x-www-form-urlencoded
+2021-11-22 21:41:03	Geetest
+GetCoder responseCode:200
+2021-11-22 21:41:03	Geetest
+GetCoderREQUEST END
+2021-11-22 21:41:03	Geetest
+Gettype responseCode:200
+2021-11-22 21:41:03	Geetest
+GettypeREQUEST END
+2021-11-22 21:41:03	Geetest
+Ajax REQUEST START
+2021-11-22 21:41:03	Geetest
+Ajax REQUEST URL: https://api.geetest.com/ajax.php?gt=678eaf2bf3a415e56ada7141342cc197&challenge=0d0d448142ce7786eef5df84487aa125&client_type=android&lang=th
+2021-11-22 21:41:03	Geetest
+Ajax Header key: Content-Encoding value: gzip
+2021-11-22 21:41:03	Geetest
+Ajax Header key: Host value: api.geetest.com
+2021-11-22 21:41:03	Geetest
+Ajax Header key: Accept-Encoding value: gzip
+2021-11-22 21:41:03	Geetest
+Ajax Header key: Content-Length value: 1301
+2021-11-22 21:41:03	Geetest
+Ajax Header key: Content-Type value: application/x-www-form-urlencoded
+2021-11-22 21:41:03	Geetest
+Ajax Header key: Cookie value: GeeTestUser=0809cbf361b6d51c0a7799c16ba1820c
+2021-11-22 21:41:04	Geetest
+Ajax responseCode:200
+2021-11-22 21:41:04	Geetest
+AjaxREQUEST END
+2021-11-22 21:41:05	Geetest
+onLoadResource-->url: https://static.geetest.com/static/appweb/app3-index.html?gt=678eaf2bf3a415e56ada7141342cc197&challenge=0d0d448142ce7786eef5df84487aa125&lang=th&title=&type=slide&api_server=api.geetest.com&static_servers=static.geetest.com,%20dn-staticdown.qbox.me&width=100%&timeout=10000&debug=false&aspect_radio_voice=128&aspect_radio_slide=103&aspect_radio_beeline=50&aspect_radio_pencil=128&aspect_radio_click=128&voice=/static/js/voice.1.2.0.js&slide=/static/js/slide.7.8.6.js&beeline=/static/js/beeline.1.0.1.js&pencil=/static/js/pencil.1.0.3.js&click=/static/js/click.3.0.2.js
+2021-11-22 21:41:07	Geetest
+Webview-->onPageStarted-->url: https://static.geetest.com/static/appweb/app3-index.html?gt=678eaf2bf3a415e56ada7141342cc197&challenge=0d0d448142ce7786eef5df84487aa125&lang=th&title=&type=slide&api_server=api.geetest.com&static_servers=static.geetest.com,%20dn-staticdown.qbox.me&width=100%&timeout=10000&debug=false&aspect_radio_voice=128&aspect_radio_slide=103&aspect_radio_beeline=50&aspect_radio_pencil=128&aspect_radio_click=128&voice=/static/js/voice.1.2.0.js&slide=/static/js/slide.7.8.6.js&beeline=/static/js/beeline.1.0.1.js&pencil=/static/js/pencil.1.0.3.js&click=/static/js/click.3.0.2.js
+2021-11-22 21:41:07	Geetest
+onLoadResource-->url: https://static.geetest.com/static/js/slide.7.8.6.js
+2021-11-22 21:41:07	Geetest
+onLoadResource-->url: https://api.geetest.com/get.php?is_next=true&mobile=true&product=embed&width=100%25&https=true&gt=678eaf2bf3a415e56ada7141342cc197&challenge=0d0d448142ce7786eef5df84487aa125&lang=th&type=slide3&api_server=api.geetest.com&timeout=10000&aspect_radio_voice=128&aspect_radio_slide=103&aspect_radio_beeline=50&aspect_radio_pencil=128&aspect_radio_click=128&voice=%2Fstatic%2Fjs%2Fvoice.1.2.0.js&beeline=%2Fstatic%2Fjs%2Fbeeline.1.0.1.js&pencil=%2Fstatic%2Fjs%2Fpencil.1.0.3.js&click=%2Fstatic%2Fjs%2Fclick.3.0.2.js&callback=geetest_1637592074966
+2021-11-22 21:41:08	Geetest
+onLoadResource-->url: https://static.geetest.com/static/js/gct.b00e0f5577a097f206b88119c116b27a.js
+2021-11-22 21:41:08	Geetest
+onLoadResource-->url: https://static.geetest.com/static/ant/style_https.1.2.6.css
+2021-11-22 21:41:08	Geetest
+JSInterface-->gtReady
+2021-11-22 21:41:08	Geetest
+onLoadResource-->url: https://static.geetest.com/pictures/gt/e71d73c33/e71d73c33.webp
+2021-11-22 21:41:08	Geetest
+onLoadResource-->url: https://static.geetest.com/pictures/gt/e71d73c33/bg/131c8209b.webp
+2021-11-22 21:41:08	Geetest
+onLoadResource-->url: https://static.geetest.com/pictures/gt/e71d73c33/slice/131c8209b.png
+2021-11-22 21:41:08	Geetest
+onLoadResource-->url: https://static.geetest.com/static/ant/sprite2x.1.2.6.png
+2021-11-22 21:41:09	Geetest
+Webview-->onPageFinished-->url: https://static.geetest.com/static/appweb/app3-index.html?gt=678eaf2bf3a415e56ada7141342cc197&challenge=0d0d448142ce7786eef5df84487aa125&lang=th&title=&type=slide&api_server=api.geetest.com&static_servers=static.geetest.com,%20dn-staticdown.qbox.me&width=100%&timeout=10000&debug=false&aspect_radio_voice=128&aspect_radio_slide=103&aspect_radio_beeline=50&aspect_radio_pencil=128&aspect_radio_click=128&voice=/static/js/voice.1.2.0.js&slide=/static/js/slide.7.8.6.js&beeline=/static/js/beeline.1.0.1.js&pencil=/static/js/pencil.1.0.3.js&click=/static/js/click.3.0.2.js
+2021-11-22 21:41:09	Geetest
+onLoadResource-->url: https://static.geetest.com/favicon.ico
+2021-11-22 21:41:11	Geetest
+onLoadResource-->url: https://api.geetest.com/ajax.php?gt=678eaf2bf3a415e56ada7141342cc197&challenge=0d0d448142ce7786eef5df84487aa1253y&lang=th&%24_BBF=3&client_type=web_mobile&w=WbL2x6JFDWReMmv9poem4pOLOtKP5kAZ2S3xL5WAUXvGRvfhlxBdxB1DGbT)phN3(oE96zP8r06JW1hEWNq(hc4rsQIbmcw2(yfbnvMTvpRkVpQ8JIE41EnuedpIUZK83Yz27LWj9DHE03eTh1XdBAHK32uwwd4zUJhGmACCPt1mNysEKgaYFXQ6wPPDS9rucj8kS2AkhbK5gK7I7sRcslQunkLL7LhJ8KLL4fm8gXsjPxIQEZQs0BtOjM13LiwRRDUMOhfkw)u0U23Oecuh)QbRx3XnWbNNQbPD(zoR7P9oWguUz1bwKe805iSL9DLo2dN2X3ivRyMp0IMIVN2qfQDtqKHdy)vUCJA889f4(1)wcg(gLwZGa6wPsgu(FJb1T4jyvk)RdJ3r6f3yupwRft2y1yktDWKxUuzxVNoeEkplhgMT3vp8PyeoJDOWvfz5H3iugV)Hs18GgeteNDOMql7PYxSHMNLu4yXlY469ZeklUc(in1qL9rg0apuT(rRnee1MQI8TLhEEGqvYh5rmKjnNDZUpVNVSUP3AjMluYcho48tC9OeEuph3kWjx2SQ77v2w)EVLCEKUlQvWxDlaQzNU0AtmcWDzXGnf9IZg1Nz9r8YvXg)C6Fd(RzAymvdjx0TAZuW00Jdu6xkzfjBT8OXLKAcBRkzHjgHNNtZtzzzHNrzetIfiZch5Sq6cjmhdAIGYf0Ut3Viyv2UHct4bLPPzizcOezRs943OKwDzkqrUobUx6N2D8sryc0diVfNulORruj4tVk56wk)EOkklsVjDNSKydNEcbNH9vDUwfuWJ22fL((0Y6IU5w1)KTpd47(NCO2NzjXbvqZXOU09C3QtfGD2lMmeXK9CPXzibBiq(a4QGPP20ZMMTfSI9(veo863ae4a63f7b9e913763e9c6b82703a3baf2e27bbd6859a66431835a2cafc5973711a42205136f9a4351b7743013a40d1359116ed5d683c34d2cff5ea2351e6fbf6bce4ca5f99ff4b9b09e4f4d84f3db8fd21ba5b29b471ab1e5426132fc5b70d67666153b30313334c3125ad4a68b20eac05fff2ea5ec933fef891ddb77f754&callback=geetest_1637592076021
+2021-11-22 21:41:12	Geetest
+JSInterface-->gtCallBack-->code: 1, message: Success
+
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Message that will be displayed on users first issue'
+        pr-message: 'Message that will be displayed on users first pull request'
