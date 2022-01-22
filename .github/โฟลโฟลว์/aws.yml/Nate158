@@ -1,0 +1,166 @@
+# This workflow will build and push a new container image to Amazon ECR,
+# and then will deploy a new task definition to Amazon ECS, when there is a push to the main branch.
+#
+# To use this workflow, you will need to complete the following set-up steps:
+#
+# 1. Create an ECR repository to store your images.
+#    For example: `aws ecr create-repository --repository-name my-ecr-repo --region us-east-2`.
+#    Replace the value of the `ECR_REPOSITORY` environment variable in the workflow below with your repository's name.
+#    Replace the value of the `AWS_REGION` environment variable in the workflow below with your repository's region.
+#
+# 2. Create an ECS task definition, an ECS cluster, and an ECS service.
+#    For example, follow the Getting Started guide on the ECS console:
+#      https://us-east-2.console.aws.amazon.com/ecs/home?region=us-east-2#/firstRun
+#    Replace the value of the `ECS_SERVICE` environment variable in the workflow below with the name you set for the Amazon ECS service.
+#    Replace the value of the `ECS_CLUSTER` environment variable in the workflow below with the name you set for the cluster.
+#
+# 3. Store your ECS task definition as a JSON file in your repository.
+#    The format should follow the output of `aws ecs register-task-definition --generate-cli-skeleton`.
+#    Replace the value of the `ECS_TASK_DEFINITION` environment variable in the workflow below with the path to the JSON file.
+#    Replace the value of the `CONTAINER_NAME` environment variable in the workflow below with the name of the container
+#    in the `containerDefinitions` section of the task definition.
+#
+# 4. Store an IAM user access key in GitHub Actions secrets named `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
+#    See the documentation for each action used below for the recommended IAM policies for this IAM user,
+#    and best practices on handling the access key credentials.
+
+name: Deploy to Amazon ECS
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  AWS_REGION: MY_AWS_REGION                   # set this to your preferred AWS region, e.g. us-west-1
+  ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
+  ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
+  ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
+  ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
+                                               # file, e.g. .aws/task-definition.json
+  CONTAINER_NAME: MY_CONTAINER_NAME           # set this to the name of the container in the
+                                               # containerDefinitions section of your task definition
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ env.AWS_REGION }}
+
+    - name: Login to Amazon ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
+
+    - name: Build, tag, and push image to Amazon ECR
+      id: build-image
+      env:
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        IMAGE_TAG: ${{ github.sha }}
+      run: |
+        # Build a docker container and
+        # push it to ECR so that it can
+        # be deployed to ECS.
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+
+    - name: Fill in the new image ID in the Amazon ECS task definition
+      id: task-def
+      uses: aws-actions/amazon-ecs-render-task-definition@v1
+      with:
+        task-definition: ${{ env.ECS_TASK_DEFINITION }}
+        container-name: ${{ env.CONTAINER_NAME }}
+        image: ${{ steps.build-image.outputs.image }}
+
+    - name: Deploy Amazon ECS task definition
+      uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+      with:
+        task-definition: ${{ steps.task-def.outputs.task-definition }}
+        service: ${{ env.ECS_SERVICE }}
+        cluster: ${{ env.ECS_CLUSTER }}
+        wait-for-service-stability: true
+   #-*- การเข้ารหัส:utf-8 -*-
+#จากตัวค้นหานำเข้า FIND
+นำเข้า urllib2
+จาก bs4 นำเข้า BeautifulSoup เป็น bs
+นำเข้าbs4
+จากเวลานำเข้าการนอนหลับ
+นำเข้าsys
+จาก pylsy นำเข้า pylsytable
+โหลดซ้ำ (sys)
+sys.setdefaultencoding('utf-8')
+ข้อมูล=[]
+t1 = []
+t2 = []
+t3 = []
+t4 = []
+t5 = []
+t6 = []
+t7 = []
+t8 = []
+t9 = []
+t10 = []
+c=0
+ret=urllib2.urlopen('http://top.sogou.com/')
+#พิมพ์ ret.read()
+ซุป=bs(ret.read(),'lxml')
+#พิมพ์ซุป.find_all('p',class_='p2')[1:]
+สำหรับฉันใน soup.select('span'):
+    ถ้า i.contents:
+        พิมพ์ i.get('class'),i.contents
+ถ้า i.get('class')[0]=='num' หรือ i.get('class')[0]=='hot-num':
+    ผ่าน
+#print i.contents[0]
+สำหรับฉันใน soup.select('a'):
+    ถ้า i.get('href').bs.find('query')>0 และประเภท (i.contents[0]) คือ bs4.element.NavigableString:
+        data.append(i.contents[0])
+สำหรับฉันอยู่ในช่วง (1,11):
+    สำหรับค่าใน data[1+10*c:(1+10*c)+10]:
+        ถ้าฉัน==1:
+            t1.append(ค่า)
+        เอลฟ์ ผม==2:
+            t2.append(ค่า)
+        เอลฟ์ ผม==3:
+            t3.append(ค่า)
+        เอลฟ์ ผม==4:
+            t4.append(ค่า)
+        เอลฟ์ ผม==5:
+            t5.append(ค่า)
+        เอลฟ์ ผม==6:
+            t6.append(ค่า)
+        เอลฟ์ ผม==7:
+            t7.append(ค่า)
+        เอลฟ์ ผม==8:
+            t8.append(ค่า)
+        เอลฟ์ ผม==9:
+            t9.append(ค่า)
+        เอลฟ์ ผม==10:
+            t10.append(ค่า)
+#print value.encode('utf-8')
+ค+=1
+#bs4.element.NavigableString
+title = [u"实时热点", u"热门电影", u"热门电视剧", u'热门综艺', u'热门动漫', u'热门小说', u'热门游戏', u'热门音乐' , u'热门汽车', u'热门人物']
+ตาราง = pylsytable (ชื่อเรื่อง)
+table.add_data(u'实时热点',t1)
+table.add_data(u"热门电影",t2)
+table.add_data(u"热门电视剧",t3)
+table.add_data(u"热门综艺",t4)
+table.add_data(u"热门动漫",t5)
+table.add_data(u"热门小说",t6)
+table.add_data(u"热门游戏",t7)
+table.add_data(u"热门音乐",t8)
+table.add_data(u"热门汽车",t9)
+table.add_data(u"热门人物",t10)
+table._create_table()
+พิมพ์ตาราง
